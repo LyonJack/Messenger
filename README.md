@@ -21,7 +21,7 @@
 
 ## 使用示例
 ```python
-from messager import messager
+from messager import Messager
 messager.subscribe(my_handler)
 ```
 
