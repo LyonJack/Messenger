@@ -72,4 +72,5 @@ def test_receiver_interface():
     receiver = MockReceiver()
     messager.subscribeReceiver(receiver)
     messager.publish("Receiver Test")
-    assert "Receiver Test" in receiver.received_messages
+    assert len(receiver.received_messages) == 1
+    assert "Receiver Test" == receiver.received_messages[0]
