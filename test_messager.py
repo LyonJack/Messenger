@@ -59,7 +59,7 @@ def test_unsubscribe():
 class MockReceiver(IReceiver[str]):
     """模拟接收者类"""
     def __init__(self):
-        self.token = object()
+        self.token = None
         self.received_messages = []
 
     def receive(self, message: str) -> None:
